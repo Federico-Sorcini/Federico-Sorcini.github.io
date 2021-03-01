@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href = "xmlstyle.css" ?>
+<records>
+    <headrow>
+        <number>Number</number>
+        <song>Song</song>
+        <artist>Artist</artist>
+        <genre>Genre</genre>
+        <year>Year</year>
+    </headrow>
+    
+    <record>
+        <number>1</number>
+        <song>Ain't That a Kick in the Head</song>
+        <artist>Dean Martin</artist>
+        <genre>Classics</genre>
+        <year>1960</year>
+    </record>
+
+    <record>
+        <number>2</number>
+        <song>It Ain't Me</song>
+        <artist>Selena Gomez</artist>
+        <genre>Pop</genre>
+        <year>2017</year>
+    </record>
+
+    <record>
+        <number>3</number>
+        <song>Scenes From an Italian Restaurant</song>
+        <artist>Billy Joel</artist>
+        <genre>Classics</genre>
+        <year>1977</year>
+    </record>
+
+    <record>
+        <number>4</number>
+        <song>Back in Black</song>
+        <artist>AC/DC</artist>
+        <genre>Rock</genre>
+        <year>1980</year>
+    </record>
+
+    <record>
+        <number>5</number>
+        <song>Runaround Sue</song>
+        <artist>Dion DiMucci</artist>
+        <genre>Classics</genre>
+        <year>1961</year>
+    </record>
+
+    <record>
+        <number>6</number>
+        <song>Young Dumb &amp; Broke</song>
+        <artist>Khalid</artist>
+        <genre>Pop</genre>
+        <year>2017</year>
+    </record>
+
+    <record>
+        <number>7</number>
+        <song>The Show Goes On</song>
+        <artist>Lupe Fiasco</artist>
+        <genre>Pop</genre>
+        <year>2010</year>
+    </record>
+
+    <record>
+        <number>8</number>
+        <song>Baba O'Riley</song>
+        <artist>The Who</artist>
+        <genre>Rock</genre>
+        <year>1971</year>
+    </record>
+
+    <record>
+        <number>9</number>
+        <song>All My Friends</song>
+        <artist>Snakeships</artist>
+        <genre>Pop</genre>
+        <year>2015</year>
+    </record>
+
+    <record>
+        <number>10</number>
+        <song>Glory Days</song>
+        <artist>Bruce Springsteen</artist>
+        <genre>Rock</genre>
+        <year>1985</year>
+    </record>
+
+    <record>
+        <number>11</number>
+        <song>Sultans of Swing</song>
+        <artist>Dire Straits</artist>
+        <genre>Rock</genre>
+        <year>1977</year>
+    </record>
+
+    <record>
+        <number>12</number>
+        <song>Fire Burning</song>
+        <artist>Sean Kingston</artist>
+        <genre>Pop</genre>
+        <year>2009</year>
+    </record>
+
+    <record>
+        <number>13</number>
+        <song>Fly Me to the Moon</song>
+        <artist>Frank Sinatra</artist>
+        <genre>Classics</genre>
+        <year>1954</year>
+    </record>
+</records>

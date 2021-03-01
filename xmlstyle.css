@@ -1,0 +1,35 @@
+records 
+{
+    display:table;
+    font-size:14px;
+    margin:8px;
+}
+headrow
+{
+    display:table-row;
+    font-size: 15px;
+    font-weight:bold;
+    border: 1px solid black;
+    padding:10px;
+    background-color: rgb(61, 143, 226);
+}
+record
+{
+    display:table-row;
+    border: 1px solid black;
+    padding:10px;
+}
+record:nth-child(even) 
+{
+    background-color: lightblue;
+}
+record:nth-child(odd) 
+{
+    background-color: rgb(213, 234, 241);
+}
+number,song,artist,genre,year 
+{
+    display:table-cell;
+    border: 1px solid black;
+    padding:10px;
+}
