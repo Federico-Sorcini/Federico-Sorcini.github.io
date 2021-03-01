@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Joe's Hotdogs</title>
+</head>
+
+<body>
+    <script language="javascript">
+    let columns = [
+        ["Hotdogs", 0],
+        ["French Fries", 0],
+        ["Drinks", 0],
+        ["Subtotal", 0],
+        ["Discount", 0],
+        ["Tax", 0],
+        ["Total", 0]
+    ];
+    columns[0][1] = parseInt(prompt ("How many Hotdogs would you like?", ""));
+    columns[1][1] = parseInt(prompt ("How many orders of French Fries would you like?", ""));
+    columns[2][1] = parseInt(prompt ("How many drinks would you like?", ""));
+    columns[3][1] = (columns[0][1] * 3.25) + (columns[1][1] * 2.00) + (columns[2][1] * 1.50);
+    if (columns[3][1] >= 20.00)
+    {
+        columns[4][1] = columns[3][1] * 0.1;
+    }
+    columns[5][1] = columns[3][1] * 0.0625;
+    columns[6][1] = columns[3][1] - columns[4][1] + columns[5][1];
+    columns[3][1] = "$" + (columns[3][1]).toFixed(2);
+    columns[4][1] = "-$" + (columns[4][1]).toFixed(2);
+    columns[5][1] = "$" + (columns[5][1]).toFixed(2);
+    columns[6][1] = "$" + (columns[6][1]).toFixed(2);
+    tab = document.createElement("TABLE");
+    tab.setAttribute("id", "Table");
+    document.body.appendChild(tab);
+    for (i = 0; i < 7; i++)
+    {
+        newRow = tab.insertRow();
+        newCell1 = newRow.insertCell();
+        newText1 = document.createTextNode(columns[i][0]);
+        newCell1.appendChild(newText1);
+        newCell1.style.paddingRight = "10px";
+        newCell2 = newRow.insertCell();
+        newText2 = document.createTextNode(columns[i][1]);
+        newCell2.appendChild(newText2);
+    }
+    </script>
+</body>
+</html>
