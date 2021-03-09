@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>LotterySim</title>
+</head>
+
+<body>
+    <script language="javascript">
+        winningInput = (prompt("Winning Numbers (5 numbers between 1 and 48): ", ""));
+        winningArray = winningInput.split(" ");
+        winningLucky = parseInt(prompt("Lucky Number (number between 1 and 18): ", ""));
+        luckyPrizes = [
+            "$4",
+            "$6",
+            "$25",
+            "$150",
+            "$5,000",
+            "$7,000 a WEEK for LIFE"
+        ];
+        regularPrizes = [
+            "$0",
+            "$3",
+            "$20",
+            "$200",
+            "$25,000 a YEAR for LIFE"
+        ];
+        playNumbers = new Array(5);
+        poolNumbers = new Array(48);
+        for (i = 0; i < 48; i++)
+        {
+            poolNumbers[i] = i + 1;
+        }
+        for (i = 0; i < 5; i++)
+        {
+            index = Math.floor(Math.random() * (47 - i) + 1);
+            playNumbers[i] = poolNumbers[index];
+            poolNumbers.splice(index, 1);
+        }
+        playLucky = Math.floor(Math.random() * 17 + 1);
+        playNumbers.sort((a,b) => a - b);
+        matches = 0;
+        for (i = 0; i < 5; i++)
+        {
+            for (j = 0; j < 5; j++)
+            {
+                if (playNumbers[i] == parseInt(winningArray[j]))
+                {
+                    matches = matches + 1;
+                }
+                continue;
+            }
+        }
+        document.write("The numbers played: ");
+        for (i = 0; i < 5; i++)
+        {
+            document.write(playNumbers[i] + " ");
+        }
+        document.write("<br>" + "Lucky number played: " + playLucky);
+        document.write("<br>" + "The winning numbers: ");
+        for (i = 0; i < 5; i++)
+        {
+            document.write(winningArray[i] + " ");
+        }
+        document.write("<br>" + "Winning lucky number: " + winningLucky);
+        document.write("<br>" + "Number of matches in the first five numbers: " + matches);
+        if (playLucky == winningLucky)
+        {
+            document.write("<br>" + "Did the lucky numbers match?: YES!");
+            document.write("<br>" + "YOU WIN " + luckyPrizes[matches]);
+        }
+        else
+        {
+            document.write("<br>" + "Did the lucky numbers match?: NO");
+            document.write("<br>" + "YOU WIN " + regularPrizes[matches]);
+        }
+    </script>
+</body>
+</html>
